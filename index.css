@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --body-bg-color: linear-gradient(to right, #000000, #434343);
+  --font-color: rgba(255, 254, 254, 0.89);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--body-bg-color);
+}
+/*----Title Text----*/
+.title-text {
+  font-size: 2.2em;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+  color: #f15839;
+}
+/*----Display Text----*/
+.time-txt {
+  font-size: 6rem;
+  margin: 0em .6rem;
+  color: var(--font-color);
+}
+.text {
+  color: var(--font-color);
+  font-size: 1.8em;
+}
+
+/*----Styling The Buttons----*/
+
+.btn-container {
+  width: 24rem;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+.btn-container .btn:first-child {
+  background-color: #2ea44f;
+}
+.btn-container .btn:nth-child(2n) {
+  background-color: #405cf5;
+}
+.btn-container .btn:last-child {
+  background: linear-gradient(to right, #ff512f, #f09819);
+}
+
+.btn {  
+  height: 2rem;
+  padding: 0rem 2.2rem;
+  color: white;
+  font-size: .8em;
+  font-weight: bold;
+  border-radius: 1rem;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.toggle-display {
+  display: none;
+}
